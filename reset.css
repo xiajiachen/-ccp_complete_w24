@@ -67,3 +67,48 @@
 #travelButton:hover {
     background-color: blue;
 }
+@media (min-width: 1024px) {
+    .pet-grid, .recipe-grid, .travel-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    nav ul li a {
+        font-size: 24px;
+        padding: 20px 30px;
+    }
+
+    nav ul li a:hover {
+        background-color: red;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .pet-profile, .recipe-item, .travel-item {
+        padding: 20px;
+    }
+
+    .pet-profile img, .pet-profile video,
+    .recipe-item img,
+    .travel-item img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+#travelButton {
+    background-color: brown; 
+    color: white; 
+    padding: 20px 40px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 20px; 
+    transition: background-color 0.3s ease; 
+}
+
+#travelButton:hover {
+    background-color: blue;
+}
